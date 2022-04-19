@@ -29,7 +29,6 @@
       while (aux.Enlace != null) {
         aux = aux.Enlace;
         string dato = aux.Dato;
-        Console.BackgroundColor = ConsoleColor.Blue;
         Console.Write(dato + " - ");
       }
     }

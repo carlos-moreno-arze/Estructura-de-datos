@@ -13,10 +13,8 @@ namespace Diccionario {
         Console.WriteLine("|3.- Eliminar palabra\n");
         Console.WriteLine("|4.- Editar palabra|\n");
         Console.WriteLine("|5.- ****** Salir *******|\n");
-        //  Console.BackgroundColor = ConsoleColor.Red;
         Console.WriteLine("|      © Derechos reservados diseñado por: Kevin Jhonatan M.        |\n");
 
-        // Console.BackgroundColor = ConsoleColor.Blue;
         int opcion = int.Parse(Console.ReadLine());
         switch (opcion)
         {
@@ -36,17 +34,14 @@ namespace Diccionario {
           }
           case 2: {
             lista.show();
-            Console.Clear();
             break;
           }
           case 3: {
             lista.delete();
-            Console.Clear();
             break;
           }
           case 4: {
             lista.edit();
-            Console.Clear();
             break;
           }
           case 5: {
