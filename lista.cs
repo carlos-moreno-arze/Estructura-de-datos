@@ -33,21 +33,21 @@
       }
     }
     public void edit () {
-      Nodo actual = new Nodo();
-      actual = head;
+      Nodo edit = new Nodo();
+      edit = head;
       bool encontrado = false;
       Console.WriteLine("Ingrese la letra a modificar");
       string letraBuscada = Console.ReadLine();
       if (head != null) {
-        while((actual != null)&&(encontrado != true)) {
-          if ((actual.Dato == letraBuscada)) {
+        while((edit != null)&&(encontrado != true)) {
+          if ((edit.Dato == letraBuscada)) {
             Console.WriteLine("La letra" + letraBuscada + " fue encontrada ");
             Console.WriteLine("Ingrese el nuevo valor para esta letra : ");
-            actual.Dato = Console.ReadLine();
+            edit.Dato = Console.ReadLine();
             Console.WriteLine("Letra modificada exitosamente!!");
             encontrado = true;
           }
-          actual = actual.Enlace;
+          edit = edit.Enlace;
         }
         if (!encontrado) {
           Console.ForegroundColor = ConsoleColor.Yellow;
