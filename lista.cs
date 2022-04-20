@@ -17,7 +17,7 @@
       while (aux.Enlace != null) {
         aux = aux.Enlace;
       }
-      // Aqui instanciamos la clase nodo y se cree un nuevo nodo
+      // Aqui instanciamos la clase nodo y se crea un nuevo nodo
       Nodo newNodo = new Nodo();
       newNodo.Dato = datoInsertar;
       newNodo.Enlace = null;
@@ -50,10 +50,12 @@
           actual = actual.Enlace;
         }
         if (!encontrado) {
+          Console.ForegroundColor = ConsoleColor.Yellow;
           Console.WriteLine("No se encontro la letra en la lista");
         }
       }
       else {
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("La lista se encuenta vacía");
       }
     }
@@ -74,12 +76,17 @@
           delete = delete.Enlace;
         }
         if (!encontrado) {
+          Console.ForegroundColor = ConsoleColor.Yellow;
           Console.WriteLine("No se encontro la letra en la lista");
         }
       }
       else {
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("La lista se encuenta vacía");
       }
+    }
+    public void clearList () {
+      head = null;
     }
   }
 }
