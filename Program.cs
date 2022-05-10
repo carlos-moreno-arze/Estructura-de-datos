@@ -3,33 +3,6 @@ namespace Diccionario {
   class Program {
     static void Main (string [] args) {
       Lista lista = new Lista();
-      lista.addList("A");
-      lista.addList("B");
-      lista.addList("C");
-      lista.addList("D");
-      lista.addList("E");
-      lista.addList("F");
-      lista.addList("G");
-      lista.addList("H");
-      lista.addList("I");
-      lista.addList("J");
-      lista.addList("K");
-      lista.addList("L");
-      lista.addList("M");
-      lista.addList("N");
-      lista.addList("Ñ");
-      lista.addList("O");
-      lista.addList("P");
-      lista.addList("Q");
-      lista.addList("R");
-      lista.addList("S");
-      lista.addList("T");
-      lista.addList("U");
-      lista.addList("V");
-      lista.addList("W");
-      lista.addList("X");
-      lista.addList("Y");
-      lista.addList("Z");
       string respuesta = "";
       do {
         Console.ForegroundColor = ConsoleColor.Blue;
